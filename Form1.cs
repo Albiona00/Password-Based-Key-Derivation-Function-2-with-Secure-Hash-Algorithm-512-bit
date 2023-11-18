@@ -17,7 +17,10 @@ namespace PBKDF2_SHA512BIT
         {
             InitializeComponent();
         }
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
+        }
         private void button_clear_Click(object sender, EventArgs e)
         {
             txt_username.Clear();
