@@ -18,6 +18,17 @@ namespace PBKDF2_SHA512BIT
             InitializeComponent();
         }
 
+        private void button_clear_Click(object sender, EventArgs e)
+        {
+            txt_username.Clear();
+            txt_password.Clear();
+        }
+
+        private void button_exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         static byte[] GenerateSalt(int saltLength = 16)
         {
             using (RandomNumberGenerator rng = RandomNumberGenerator.Create())
