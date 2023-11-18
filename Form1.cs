@@ -35,7 +35,7 @@ namespace PBKDF2_SHA512BIT
             {
                 // Example parameters
                 byte[] salt = GenerateSalt();
-                int iterations = 1; // Number of iterations (adjust according to your security requirements)
+                int iterations = 10000; // Number of iterations (adjust according to your security requirements)
                 int derivedKeyLength = 64; // 64 bytes for SHA-512
 
                 // Generate the derived key using PBKDF2-SHA512
